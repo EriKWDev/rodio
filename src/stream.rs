@@ -28,7 +28,8 @@ impl OutputStream {
 }
 
 #[derive(Copy, Clone, Debug)]
-struct OutputStreamConfig {
+/// comment comment
+pub struct OutputStreamConfig {
     channel_count: ChannelCount,
     sample_rate: SampleRate,
     buffer_size: BufferSize,
@@ -41,7 +42,8 @@ struct OutputStreamConfig {
 #[derive(Default)]
 pub struct OutputStreamBuilder {
     device: Option<cpal::Device>,
-    config: OutputStreamConfig,
+    /// luptidoo, docs required...
+    pub config: OutputStreamConfig,
 }
 
 impl Default for OutputStreamConfig {
